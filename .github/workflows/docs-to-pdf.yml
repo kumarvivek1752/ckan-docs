@@ -1,0 +1,25 @@
+
+name: Generate Docs PDF
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14'
+      - run: npm ci
+      - name: Generate PDF
+        run: npx docs-to-pdf --initialDocURLs="https://kumarvivek1752.github.io/ckan-docs/docs/intro" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://api.ogptoolbox.org/images/7f/5d9cd03d8696c29670d698a93f47e3.png" --coverTitle="CKAN Notes" --outputPDFFilename="pdf/CKAN_Notes.pdf"
+      - name: Commit PDF
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Update documentation PDF" -a || echo "No changes to commit"
+          git push
+

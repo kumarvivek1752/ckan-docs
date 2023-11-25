@@ -24,8 +24,13 @@ const config = {
   projectName: 'ckan-docs', // Usually your repo name.
   deploymentBranch: 'gh-pages',
 
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
+  // onBrokenLinks: 'throw',
+  // onBrokenMarkdownLinks: 'warn',
+  onBrokenLinks: 'ignore',
+
+
+  // plugins
+  plugins: [require.resolve('docusaurus-lunr-search')],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -75,7 +80,7 @@ const config = {
             label: 'Tutorial',
           },
           {
-            href: 'https://github.com/kumarvivek1752/ckan-docs/',
+            href: 'https://github.com/kumarvivek1752/ckan-docs/blob/main/CKAN_Notes.pdf',
             label: 'DownloadPdf',
             position: 'right',
           },
@@ -94,37 +99,16 @@ const config = {
             ],
           },
           {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/kumarvivek1752/ckan-docs',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} CKAN Notes, Vivek Kumar`,
       },
       prism: {
         theme: prismThemes.github,
@@ -132,5 +116,6 @@ const config = {
       },
     }),
 };
+
 
 export default config;

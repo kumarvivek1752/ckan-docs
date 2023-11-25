@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkckan_docs=self.webpackChunkckan_docs||[]).push([[6221],{6769:a=>{a.exports=JSON.parse('{"label":"facebook","permalink":"/ckan-docs/blog/tags/facebook","allTagsPath":"/ckan-docs/blog/tags","count":1,"unlisted":false}')}}]);

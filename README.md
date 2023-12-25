@@ -39,3 +39,11 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+
+### generate pdf 
+
+```
+npx docs-to-pdf --initialDocURLs="https://kumarvivek1752.github.io/ckan-docs/" --contentSelector="article" --paginationSelector="a.pagination-nav__link.pagination-nav__link--next" --excludeSelectors=".margin-vert--xl a,[class^='tocCollapsible'],.breadcrumbs,.theme-edit-this-page" --coverImage="https://api.ogptoolbox.org/images/7f/5d9cd03d8696c29670d698a93f47e3.png" --coverTitle="CKAN Notes" --outputPDFFilename="pdf/CKAN_Notes.pdf"
+
+```

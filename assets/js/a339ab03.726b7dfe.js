@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkckan_docs=self.webpackChunkckan_docs||[]).push([[8142],{2758:o=>{o.exports=JSON.parse('{"permalink":"/ckan-docs/blog/tags/facebook","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

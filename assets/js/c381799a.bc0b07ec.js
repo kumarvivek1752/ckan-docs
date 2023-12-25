@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkckan_docs=self.webpackChunkckan_docs||[]).push([[5639],{8534:s=>{s.exports=JSON.parse('{"label":"docusaurus","permalink":"/ckan-docs/blog/tags/docusaurus","allTagsPath":"/ckan-docs/blog/tags","count":4,"unlisted":false}')}}]);

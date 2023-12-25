@@ -1,10 +1,9 @@
 ---
 sidebar_position: 1
 unlisted: true
-
 ---
 
-# How to install Azure AD on CKAN
+# install Azure AD and congigure on CKAN
 
 You have just learned the **How to install CKAN** 
 

@@ -1,6 +1,6 @@
 {
-  "label": "Harvester with CKAN",
-  "position": 3,
+  "label": "Fluent with CKAN",
+  "position": 5,
   "link": {
     "type": "generated-index",
     "description": "A Breif Guide to Configuring Harvester with CKAN"

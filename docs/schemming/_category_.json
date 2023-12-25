@@ -1,0 +1,8 @@
+{
+  "label": "Schemming with CKAN",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "A Breif Guide to Configuring multilanguage fields in datatsets in CKAN using the Schemming extension"
+  }
+}
